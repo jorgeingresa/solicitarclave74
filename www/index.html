@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>{lbTitle}</title>
+<meta name="GENERATOR" content="CodeCharge Studio 5.0.0.15750">
+<link rel="stylesheet" type="text/css" href="css/estilos_sistema.css" />
+<style>
+  .errors{ font-size:10px; color:red; }
+</style>
+{js_xajax}
+<script language="JavaScript" type="text/javascript">
+
+var bNoAutorizado = 0{UnauthorizedUser};
+
+//Begin CCS script
+//Include Common JSFunctions @1-252A7665
+</script>
+<script language="JavaScript" src="ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//_OnLoad @1-9C4F01C0
+function _OnLoad()
+{
+    var result = true;
+//End _OnLoad
+
+//Set Focus @30-9535938E
+    if (document.forms["acceso"] && document.forms["acceso"].rut) document.forms["acceso"].rut.focus();
+//End Set Focus
+
+//Close _OnLoad @1-BC33A33A
+    return result;
+}
+//End Close _OnLoad
+
+//bind_events @1-C1F288D9
+function bind_events() {
+    if (functionExists("header_bind_events")) header_bind_events();
+    if (functionExists("footer_bind_events")) footer_bind_events();
+    addEventHandler("", "load", _OnLoad);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+
+
+
+{header}
+<br>
+
+          <table class="formu-ingresa" width="100%">
+            <tr>
+			  <td style="text-transform: uppercase; font-size: 14px; color: #069; font-weight: bold; text-align: center;" colspan="2">¡Bienvenido!</td>
+			</tr>
+			<tr>
+              <td style="text-align: justify;" colspan="2">
+			  <br>
+			  <br>
+				Lorem ipsum dolor sit amet, in eam debet zril petentium, vix at tota deleniti urbanitas, eu primis tamquam cum. Et deseruisse disputationi vis, tollit invenire scribentur cu mei. Nam tantas fabulas et, quem tale possim ius cu, duo omnium contentiones ne. Altera vocibus incorrupte sed ad, te ornatus delenit his. Ne has clita nostro, has cu volumus apeirian necessitatibus.
+				<br><br>
+				Solum populo ad mea, dicta sententiae cu his. Id ius quando verterem explicari, pri at sumo quodsi. Cu sea case meliore gubergren. Cu adhuc vocibus invenire ius.
+				<br><br>
+				Laoreet nusquam fuisset sit ne. Usu hinc vocibus comprehensam cu. Dicit oporteat reprimique cu duo. Congue mollis hendrerit pro te, et iisque aeterno pericula has, id usu graeci legimus. Sit everti legendos maiestatis no.
+				<br><br>
+				Eu error fuisset pericula quo. Eum tota ubique vituperatoribus in. Vel sint perpetua te. Duo suas duis saperet at, sea te eripuit voluptaria. Labore iuvaret ut sit, laudem atomorum qui ea.
+				<br><br>
+				Inani fabulas delicata per ei. Ex soleat theophrastus mei, sed et nemore dolores perfecto. Mei ei scaevola nominati, illud admodum nam ut. Sit et vidit posse. Nec eu atqui definiebas, integre lucilius per no, ne assum habemus disputationi duo.
+				<br><br><br>
+              </td>
+			</tr>
+			<tr>
+		        <td style="FONT-SIZE: 11px; TEXT-ALIGN: center" width="50%"><a href="solicitar_pass.php">Solicitar clave Ingresa</a></td> 
+		        <td style="FONT-SIZE: 11px; TEXT-ALIGN: center" width="50%"><a href="auth_recordar.php">¿Olvidaste tu clave Ingresa?</a></td> 
+            </tr>
+          </table>
+
+ <br>
+{footer} 
+</body>
+</html>

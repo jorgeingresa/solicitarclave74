@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+	html { 	
+	}
+	
+	body {		
+		font-family: Arial, Verdana, Helvetica, sans-serif;
+		letter-spacing: 0.015em;
+		word-spacing: 0.050em;
+		font-style:normal;
+		font-weight:normal;
+		font-size: 0.75em;
+		color: #000;
+		margin: 0;
+		padding: 0;	
+	} 
+
+	h1, h2, h3, h4, h5, h6, p , ul { padding: 0 10px 1em 10px; text-align: left; } 
+	
+	h1, h2, h3, h4, h5, h6 { font-family:Arial, Helvetica, sans-serif ; padding: 0.5em; }
+	
+	h1 { font-size:1.1em; color:#C00;background: url(../img/icon_titulo.png) left center no-repeat; padding-left:25px; text-transform:uppercase; }
+	h2 { font-size: 1.25em; padding: 0; background: url(images/fle.jpg) left center no-repeat; padding-left:11px; margin-bottom:6px;font-weight:bold; color: #069;}
+	h3 { font-size: 1.25em; color: #c00; padding: 0.2em;font-weight:bold;}
+	h4 { font-size: 1.1em; color: #333; padding: 0.2em;font-weight:bold;border-bottom:1px solid #ccc;}
+	h5 { font-size: 1em;  font-weight:bold; color: #069; }
+	h6 { font-size: 1em; }
+	
+	p { padding: 0.5em; line-height: 1.2em; }
+	
+	blockquote { font: 1.4em Georgia, Times New Roman, "Times New Roman", serif; font-style: italic; text-align: center; margin: 0 0 1em 0; line-height: 1.75em; }
+	
+	ol, ul { overflow: hidden; font-family: Arial, Helvetica, sans-serif; margin: 0 0 1em 0; padding: 0; }
+	li { line-height: 1.8em; list-style: none; margin: 0 0 0.4em 0; padding: 0; line-height: 1.5em; }
+	li a { display: inline; }
+		
+	form { margin: 0 0 1em 0; padding: 0; background: #fff; height: 1%; }
+	fieldset { color: #fff; display: block; text-align: center; height: 1%; padding: 1.5em 0;  }
+	legend { margin: 0.5em 0.5em 1em 0.5em; padding: 5px; background: #fff; }
+	label { margin: 0 0.5em; display: block; }
+	input { border: 1px solid #ccc; }
+	
+	hr { height: 1px; width: 100%; margin: 20px 0 20px 0; border: 0; border-top: 1px dotted #000; display: block; clear: both; }
+	
+	a { color: #cc0000; font-weight: normal; margin: 0; padding: 0; height: 1%; }
+	a:hover { color: #006699; }
+	
+	strong { font-weight: bold; }
+	
+	img {  margin: 0; padding: 0; float: left; }	
+	
+	/*Usar si necesitas un contenedor sin paddings laterales*/
+	#contenedor.extendido { width: 960px; background: yellow; padding: 0; border: 1px solid red; border-width: 1px 0; margin-bottom: 20px; }
+	
+	
+	
+	.header{ width: 100%; overflow: hidden; margin: 0; overflow: hidden; }
+	
+	.navbar{height:37px; background: url(../img/menugrad.jpg) 0 0 repeat-x; color:#FFF;}
+	
+	.footer p {text-align:center; color:#069; font-size:1em; background-color:#FFF; line-height:1.25em;}
+	
+	.titulo{	min-height:18px; display: inline-block;font-weight:bold;	font-size:1.2em; color:#C00;background: url(../img/icon_titulo.png) left top no-repeat; padding-left:25px;}
+	
+	.box-noticias{background-color:#ddd; width:465px; height:245px; margin:3px;}
+	
+	#menuh {  color:#FFF; font-size:1em; }
+
+	#menuh ul, li { list-style-type: none; display:inline;}
+
+	#menuh ul {margin: 0; padding: 0;}
+
+	#menuh li {float: left;}
+
+	#menuh a { text-decoration: none;  font-weight:normal;color: #fff;display: block; padding: 9px 10px;text-align: center;border: 1px solid #990000; border-width: 0 1px 0 0;}
+
+	#menuh a:hover {       background: url(../img/hovergrad.jpg) 0 0 repeat-x;}
+	
+	#menuh .active {       background: url(../img/hovergrad.jpg) 0 0 repeat-x;}
+	
+		.contenido-interior{ padding:1em; margin:0; height:auto;}
+		
+		
+		#caja_curso{
+
+			padding:2px 10px;
+		
+		}
+		
+		
+		#tabs{
+                        min-width:70px;
+			height:300px;
+			padding-top:3px;
+		
+		}
+			#tabs2{
+                        min-width:70px;
+			min-height:300px;
+			padding-top:3px;
+		
+		}
+		.twtr-ft{
+			background:none;}
+			
+			#twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4, #twtr-widget-1 .twtr-popular {
+				background:none;width:96%;
+}
+			
+			.twtr-tweets {
+				background:none;}
+				
+		.twtr-doc{
+			background:none;
+                        }
+
+
+	input[type='submit']{
+        font-family:Arial, Helvetica, sans-serif;
+	border-style:none;
+	background-image: url(../img/menugrad.jpg);
+	background-repeat: repeat-x;
+	font-size:13px;
+	color:#ffffff;
+	text-align:center;
+	min-width:60px;
+	height:22px;
+
+} 
+
+  .boton{
+        font-family:Arial, Helvetica, sans-serif;
+        border-style:none;
+        background-image: url(../img/menugrad.jpg);
+        background-repeat: repeat-x;
+        font-size:13px;
+        color:#ffffff;
+        text-align:center;
+        min-width:60px;
+        height:22px;
+
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>{lbTitle}</title>
+<link rel="stylesheet" type="text/css" href="css/estilos_sistema.css">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+{header} <br>
+<!-- BEGIN Record portal_autentificacion -->
+<form id="portal_autentificacion" method="post" name="{HTMLFormName}" action="{Action}">
+  <div id="solicitar-clave-captcha" class="a900 formu1">
+    <div id="solicitar-clave-caja1">
+      <h1>Solicitar Contraseña</h1>
+      <table class="formu-ingresa" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <th style="TEXT-ALIGN: right" width="25%">RUT:&nbsp;</th>
+ 
+          <td width="35%"><input id="portal_autentificacionaute_rut" onkeypress="return acceptNum(event)" value="{aute_rut}" maxlength="10" name="{aute_rut_Name}">-<input id="portal_autentificaciontxt_dv" onkeypress="return acceptDv(event)" value="{txt_dv}" maxlength="1" size="1" name="{txt_dv_Name}"></td> 
+          <td style="TEXT-ALIGN: left" width="45%"><span class="error">{err_rut}, {err_dv}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">Fecha Nacimiento:&nbsp;</th>
+ 
+          <td>
+            <select id="portal_autentificacionlb_dia" name="{lb_dia_Name}">
+              {select_dia_opciones}{lb_dia_Options}
+            </select>
+ - 
+            <select id="portal_autentificacionlb_mes" name="{lb_mes_Name}">
+              {select_mes_opciones}{lb_mes_Options}
+            </select>
+ - 
+            <select id="portal_autentificacionlb_ano" name="{lb_ano_Name}">
+              {select_anios_opciones}{lb_ano_Options}
+            </select>
+ </td> 
+          <td style="TEXT-ALIGN: left"><span class="error">{err_fec}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">E-mail:&nbsp;</th>
+ 
+          <td><input id="portal_autentificacionaute_email" value="{aute_email}" name="{aute_email_Name}"></td> 
+          <td style="TEXT-ALIGN: left"><span class="error">{err_email}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">Confirmar E-mail:&nbsp;</th>
+ 
+          <td><input id="portal_autentificaciontxt_email_conf" value="{txt_email_conf}" name="{txt_email_conf_Name}"></td> 
+          <td style="TEXT-ALIGN: left"><span class="error">{err_email_conf}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">Clave:&nbsp;</th>
+ 
+          <td><input id="portal_autentificacionaute_clave" value="{aute_clave}" type="password" name="{aute_clave_Name}"></td> 
+          <td style="TEXT-ALIGN: left"><span class="error">{err_clave}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">Confirmar Clave:&nbsp;</th>
+ 
+          <td><input id="portal_autentificaciontxt_clave_conf" value="{txt_clave_conf}" maxlength="20" type="password" name="{txt_clave_conf_Name}"></td> 
+          <td style="TEXT-ALIGN: left">&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">Pregunta:&nbsp;</th>
+ 
+          <td><label style="display: none;" for="portal_autentificacionaute_pregunta">&nbsp;&nbsp;&nbsp;</label> 
+            <select id="portal_autentificacionaute_pregunta" name="{aute_pregunta_Name}">
+              <option selected value="">Seleccionar Valor</option>
+              {aute_pregunta_Options}
+            </select>
+ </td> 
+          <td style="TEXT-ALIGN: left"><span class="error">{err_preg}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <th style="TEXT-ALIGN: right">Respuesta:&nbsp;</th>
+ 
+          <td><input id="portal_autentificacionaute_respuesta" value="{aute_respuesta}" maxlength="20" name="{aute_respuesta_Name}" size="20"></td> 
+          <td style="TEXT-ALIGN: left"><span class="error">{err_resp}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <td>&nbsp;</td> 
+          <td>&nbsp;</td> 
+          <td>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <td colspan="3"><p style="text-align:justify;padding:10px;">Acredito y declaro que los datos de contacto ingresados y registrados en el presente formulario corresponden a mis antecedentes personales, siendo los mismos veraces y fidedignos, por lo que asumo la responsabilidad exclusiva por el uso de la clave de autenticación que será generada y entregada al correo electrónico que se individualiza en el presente formulario, la cual me permitirá acceder a toda la información de mi Crédito con Garantía Estatal. <br/>
+Asimismo, declaro que el correo electrónico previamente registrado no se encuentra actualizado, facultando a Comisión Ingresa a registrar este último correo electrónico como uno de mis medios de contacto. Del mismo modo, autorizo a Comisión Ingresa a remitir la clave requerida para acceder al Portal del beneficio al correo electrónico que se individualiza y a enviar toda clase de comunicaciones relativas al Sistema de Crédito para Estudios Superiores de la Ley N° 20.027.</p></td>
+        </tr>
+		<tr>
+          <td  colspan="3" style="text-align:center">
+          <div class="g-recaptcha captchaPadding"  data-sitekey="6LdG994UAAAAAMEyZk008hFki0xAKhZJWr2d7PPi" style="display: inline-block;"></div></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align:center"><span class="error">{err_captcha}</span>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <td colspan="3" style="text-align:center"><input id="portal_autentificacionchk_acepto" value="1" type="checkbox" name="{chk_acepto_Name}" {chk_acepto}>&nbsp;<label>Acepto las condiciones.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td> 
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align:center"><span class="error">{err_acepto}</span>&nbsp;</td>
+        </tr>
+      
+
+
+        <!-- BEGIN Error -->
+        <tr>
+          <td colspan="3"><span class="error">{Error}</span></td>
+        </tr>
+        <!-- END Error -->
+      </table>
+    </div>
+  </div>
+  <br>
+  <table width="100%">
+    <tr>
+      <td width="50%">
+        <div class="button-box" align="right">
+         <input id="volver" class="miboton" value="Volver" alt="Volver" type="button" name="volver" onClick="window.location.href='//beneficiario.ingresa.cl'">
+        </div>
+      </td> 
+      <td width="50%">
+        <div class="button-box" align="left">
+          <!-- BEGIN Button Button_Insert --><input id="portal_autentificacionButton_Insert" class="miboton" value="Solicitar" alt="Solicitar" type="submit" name="{Button_Name}"><!-- END Button Button_Insert -->
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record portal_autentificacion --><br>
+{footer} 
+</body>
+</html>

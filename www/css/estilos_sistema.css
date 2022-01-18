@@ -1,0 +1,187 @@
+body { color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; text-align: center; background-color: #FFFFFF; margin: 0; padding: 0; }
+h1 { font-size: 20px; line-height: 110%; font-weight: normal; font-style: normal; text-align: left; margin-bottom: 5px; text-transform: uppercase; color: #069; border-bottom: 1px solid #ccc; }
+h2 { background: url(img/bg-titulo.jpg) no-repeat; width: auto; margin-top: 15px; height: 22px; padding: 3px 0 0 5px; margin-bottom: 10px; color: #666; font-size: 14px; font-weight: normal; }
+h3 { font-size: 16px; line-height: 110%; text-align: left; margin-top: 2px; margin-bottom: 5px; color:#069; font-weight:normal; text-transform: uppercase; }
+h4 { font-size: 16px; line-height: 110%; text-align: left; margin-top: 2px; margin-bottom: 5px; color:#666; }
+h5 { font-size: 13px; line-height: 110%; text-align: left; margin-top: 2px; margin-bottom: 5px; text-transform: uppercase; font-weight: normal; color:#666; }
+h5, h6, h7, h8, h9 { line-height: 110%; text-align: left; margin-top: 2px; margin-bottom: 5px; }
+p { line-height:18px; }
+img { border-style: none;}
+a { color: #006699; text-decoration: none; }
+table.formu-ingresa { font-size: 11px; }
+
+input.error { border: 2px solid red !important; padding: 2px; }
+select.error { border: 2px solid red !important; background-color: #fff; background-image: none; padding: 2px; }
+label.error { color: red; font-size: 11px; padding-left: 5px; }
+
+.error { color: red; font-size: 11px; }
+.alignleft { float: left; }
+.aligncenter { margin: 0 auto; display: block; }
+.alignright { float: right; }
+.clear { clear: both; }
+.breadcrumbs { width: 50%; height: 30px; font-size: 11px; float: left; text-align: left; }
+.caja-gris { margin-top: 20px; margin-right: 20px; }
+.cg-top { background: url(img/cg-top.png) 0 0 no-repeat; width: 450px; height: 22px; padding: 13px 0 0 0; }
+.cg-down { background: url(img/cg-down.png) 0 0 no-repeat; width: 450px; height: 16px; }
+.cg-mid { background: url(img/cg-mid.png) 0 0 repeat-y; width: 450px; height: auto; padding: 5px 0 0 0; }
+.cg-titulo { color: #fff; text-indent: 5px; font-size: 14px; text-align: left; }
+.alto-login { height: 260px; }
+.login { }
+.login td { padding: 5px 10px; }
+.login th { padding: 5px 10px; color: #069; font-size: 14px; }
+.login input { padding: 5px; border-radius: 5px; border: 1px solid #069; width: 200px; }
+.button-box { margin: 10px; }
+.button-box input { padding: 5px; border-radius: 5px; border: 1px solid #069; width: 150px; }
+.button-box1 { margin: 10px; }
+.button-box1 input { padding: 5px; border-radius: 5px; border: 1px solid #069; width: 250px; }
+.button-box2 { margin: 10px; }
+.button-box2 input { padding: 5px; border-radius: 5px; border: 1px solid #069; width: 100px; }
+.miboton { color: #FFF; background: #036 url(img/bg-menu.jpg) 0 0 repeat-x; border: 1px solid #069; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; padding: 5px 10px; height: 30px; }
+.miboton:hover { color: #FFF; background: #069; border: 1px solid #069; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; height: 30px; }
+.miboton_disabled { color: #FFF; background: #C3C3C3 url(img/bg-menu2.jpg) 0 0 repeat-x; border: 1px solid #C3C3C3; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; padding: 5px 10px; height: 30px; }
+.wrapped { font-size: 11px; color: #666; width: 940px !important; padding: 7px 10px; overflow: hidden; text-align: center; }
+.a900 { width:920px; }
+.formu1 { border:1px solid #ccc; }
+.formu1 h1 { background: url(img/bg-menu.jpg) 0 0 repeat-x; color: #fff; text-transform: uppercase; font-size: 12px; height: 20px; padding: 7px 0 0 10px; margin: 0; }
+.formu1 h2 { background: url(img/form-h1.jpg) 0 0 repeat-x; color: #666; text-transform: uppercase; font-size: 12px; height: 20px; padding: 7px 0 0 10px; margin: 3px; }
+.formu1 th { text-align: right; font-weight: normal; color: #069; padding: 5px 5px 0 5px; /*font-size:12px;*/}
+.formu1 td { text-align: left; font-weight: normal; color: #069; padding: 5px 5px 0 5px; /*font-size:12px;*/}
+.formu1 input { border: 1px solid #ccc; padding: 2px; }
+.formu1 select { border: 1px solid #ccc; background-color: #fff; background-image: none; padding: 2px; }
+
+/* menu superior o principal */
+.menu {width:960px;height: 30px;margin: 0px 0px 0px 0px;}
+.menu ul {color:#fff;padding: 0;margin: 0;list-style-type: none;}
+.menu ul li {text-align:left; width: auto;float: left;position: relative;z-index: 100;height:16px;padding: 7px 15px 7px 15px;border-left: 1px solid #063c68;border-right: 1px solid #326894;}
+.menu ul li:hover {color: #1B4B73;background-color: #fff;border-top: 1px solid #1B4B73;}
+.menu ul li a {color: #fff;font-family: Verdana, Arial, sans-serif; font-size: 11px;text-decoration: none;}
+.menu ul li.current_page_item a {color: #999;}
+.menu ul li.menu_activo  {color: #1B4B73; background-color: #fff;border-top: 1px solid #1B4B73;}
+.menu ul li.menu_activo a {color: #1B4B73;}
+.menu.ul li:hover {overflow: hidden;}
+.menu li:hover a {color:#1B4B73;z-index: 50;}
+.menu ul li ul {display: none;}
+.menu ul li:hover ul.columnas {display: block;background: #1B4B73 url('img/bg-menu.jpg');position: absolute;float: left;list-style-type: none; top: 29px;left: 0px;}
+.menu ul li:hover ul.columnas li {display:inline;float: left;border: 0px;margin-right: 10px;width: 185px;}
+.menu ul li:hover ul.columnas li:hover {background: #1B4B73 url('img/bg-menu.jpg');}
+.menu ul li:hover ul.columnas li a {color: #fff;}
+/* fin menu superior o principal */
+
+/**** cuando llevan adelante un # hacen referencia a un ID de algun objeto ****/
+#contenedor { width:960px; height:auto; margin:auto; background-color:#fff; border: 1px solid #CCCCCC; }
+/*#header { height: 127px; width: 960px; display: block; background: #fff url('img/header2.jpg') no-repeat; }*/
+/*#header { height: 127px; width: 960px; display: block; background: #fff; }*/
+/*#header { height: 127px; width: 960px; display: block; background: #fff url('img/logo-ingresa.png') no-repeat; }*/
+
+/** ticket ingresa2019/#210  */
+header {
+    position: relative;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0063c7;
+    height: 95px;
+    background-image: url(../img/bg-header.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 70% 60px;
+}
+
+header .logo {
+    display: inline-block;
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+/** ticket ingresa2019/#210  */
+
+
+#footer { border-top: 30px solid white; border-bottom: 10px solid white; width: 100%; margin: 0; padding: 0; background: white; display: block; }
+#nav { width: 960px; height: 30px; background: #1B4B73 url('img/bg-menu.jpg'); }
+#contenido { margin: 20px 20px 20px 20px; display: block; width: 920px; height: auto; position: relative; background: white; }
+#tooltip { position: absolute; z-index: 2000; border: 1px solid #111; background-color: #eee; padding: 4px; opacity: 0.85; font-size: 80%; }
+#tooltip h3, #tooltip div { margin: 0; }
+
+/*  inicio sección cajas pestañas (mod. por jfuentes)  */
+#info-gral-contenedor { width:896px; height:680px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; margin-left: -10px; }
+#decla-ingresos-contenedor { width:896px; height:555px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; margin-left: -10px; }
+#decla-jurada-contenedor { width:896px; height:310px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; margin-left: -10px; }
+#doc-adjunta-contenedor { width:896px; height:525px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; margin-left: -10px; }
+
+#info-gral-caja1 { width:892px; height:305px; position:absolute; top:0px; left:0px; border:1px solid #ccc; }
+#info-gral-caja2 { width:892px; height:320px; position:absolute; top:310px; left:0px; border:1px solid #ccc; }
+#info-gral-caja3 { width:892px; height:40px; position:absolute; top:635px; left:0px; }
+
+#decla-ingresos-caja1 { width:892px; height:470px; position:absolute; top:35px; left:0px; }
+#decla-ingresos-caja2 { width:892px; height:40px; position:absolute; top:510px; left:0px; }
+
+#decla-jurada-caja1 { width:892px; height:305px; position:absolute; top:0px; left:0px; border:1px solid #ccc; }
+
+#doc-adjunta-caja1 { width:892px; height:475px; position:absolute; top:0px; left:0px; border:1px solid #ccc; }
+#doc-adjunta-caja2 { width:892px; height:40px; position:absolute; top:480px; left:0px; }
+
+#info-gral-contenedor h1 { background: url(img/bg-menu.jpg) 0 0 repeat-x; color:#fff; text-transform:uppercase; font-size:10px; height:20px; padding:7px 0 0 10px; margin:0; }
+#decla-ingresos-contenedor h1{ background: url(img/bg-menu.jpg) 0 0 repeat-x; color:#fff; text-transform:uppercase; font-size:10px; height:20px; padding:7px 0 0 10px; margin:0; }
+#decla-jurada-contenedor h1 { background: url(img/bg-menu.jpg) 0 0 repeat-x; color:#fff; text-transform:uppercase; font-size:10px; height:20px; padding:7px 0 0 10px; margin:0; }
+#doc-adjunta-contenedor h1 { background: url(img/bg-menu.jpg) 0 0 repeat-x; color:#fff; text-transform:uppercase; font-size:10px; height:20px; padding:7px 0 0 10px; margin:0; }
+/*  termino sección cajas pestañas (mod. por jfuentes)  */
+
+/*  css especial para solicitar clave */
+#solicitar-clave-contenedor { width:920px; min-height:450px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; margin-left: -10px; } 
+#solicitar-clave-captcha{ width:920px; min-height:650px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; margin-left: -10px; }
+#solicitar-clave-caja1 { width:920px; min-height:450px; position:absolute; top:0px; left:0px; }
+#solicitar-clave-contenedor h1 { background: url(img/bg-menu.jpg) 0 0 repeat-x; color:#fff; text-transform:uppercase; font-size:10px; height:20px; padding:7px 0 0 10px; margin:0; }
+
+/*  css especial para pdf */
+table.formu-ingresa-pdf { font-size: 10px; border-collapse: collapse; }
+.a900-pdf { width:950px; }
+.formu1-pdf { border: 0px; }
+.formu1-pdf th { text-align: right; font-weight: normal; color: #069; padding: 5px 5px 0 5px; /*font-size:12px;*/}
+.formu1-pdf td { text-align: left; font-weight: normal; color: #069; padding: 5px 5px 0 5px; /*font-size:12px;*/}
+.linea { border-bottom: solid 1px #069; border-left: 0px; border-right: 0px; border-top: 0px; }
+
+#info-contenedor1-pdf {width:905px; height:120px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; border:1px solid #ccc; }
+#info-contenedor2-pdf {width:905px; height:100px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; border:1px solid #ccc; }
+#info-contenedor3-pdf {width:905px; height:80px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; border:1px solid #ccc; }
+#info-contenedor4-pdf {width:905px; height:330px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; }
+#info-contenedor5-pdf {width:905px; height:110px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; }
+#info-contenedor6-pdf {width:905px; height:180px; position:relative; font-family:Verdada, Arial, Helvetica, sans-serif; }
+
+#info-caja1-pdf {width:900px; height:110px; position:absolute; }
+#info-caja2-pdf {width:900px; height:90px; position:absolute; }
+#info-caja3-pdf {width:900px; height:70px; position:absolute; }
+#info-caja4-pdf {width:900px; height:320px; position:absolute; }
+#info-caja5-pdf {width:900px; height:100px; position:absolute; }
+#info-caja6-pdf {width:900px; height:170px; position:absolute; }
+
+#info-contenedor1-pdf h1{ background: #036; color: #fff; text-transform: uppercase; font-size: 10px; height: 20px; padding: 7px 0 0 10px; margin:0; }
+#info-contenedor2-pdf h1{ background: #036; color: #fff; text-transform: uppercase; font-size: 10px; height: 20px; padding: 7px 0 0 10px; margin:0; }
+#info-contenedor3-pdf h1{ background: #036; color: #fff; text-transform: uppercase; font-size: 10px; height: 20px; padding: 7px 0 0 10px; margin:0; }
+#info-contenedor6-pdf h1{ background: #036; color: #fff; text-transform: uppercase; font-size: 10px; height: 20px; padding: 7px 0 0 10px; margin:0; }
+
+
+.tabla_recordar{
+	text-align:left;
+	width:100%;
+}
+.tabla_recordar th{
+	font-weight: bold;
+	width:15%;
+}
+.tabla_recordar td{
+	font-weight: normal;
+	width:15%;
+}
+
+.tabla_recordar a{
+	text-decoration: none;
+}
+
+.pl10{
+	padding-left:10px;
+}
+
+.pl20{
+	padding-left:20px;
+}

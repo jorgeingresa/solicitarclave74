@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/estilos_sistema.css" />
+<title>{lbTitle}</title>
+</head>
+<body>
+<p>{header}</p>
+<div id="solicitar-clave-contenedor" class="a900 formu1">
+
+<!-- BEGIN Record PORTAL_AUTENTIFICACION -->
+<form id="PORTAL_AUTENTIFICACION" method="post" name="{HTMLFormName}" action="{Action}">
+  <h1 class="pagetitle">Cambiar Clave</h1>
+ <br>
+  <br>
+  <p>Para cambiar tu clave, responde a la pregunta que ingresaste a este sistema. <br>
+  </p>
+ 
+  <div class="form_table">
+    <table>
+      <!-- BEGIN Error -->
+      <tr>
+        <td colspan="2">
+          <p class="error">{Error} </p>
+ </td> 
+      </tr>
+ <!-- END Error -->
+      <tr>
+        <td><label>Pregunta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td> 
+        <td>{AUTE_pregunta}</td> 
+      </tr>
+ 
+      <tr>
+        <td><label>Respuesta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td> 
+        <td><input id="PORTAL_AUTENTIFICACIONAUTE_respuesta" value="{AUTE_respuesta}" maxlength="200" size="70" name="{AUTE_respuesta_Name}" size="20"></td> 
+      </tr>
+ 
+      <tr>
+        <td><label>Nueva Clave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td> 
+        <td><input id="PORTAL_AUTENTIFICACIONAUTE_pass_creada" value="{AUTE_pass_creada}" maxlength="10" size="10" type="password" name="{AUTE_pass_creada_Name}"></td> 
+      </tr>
+ 
+      <tr>
+        <td><label>Confirmar nueva Clave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td> 
+        <td><input id="PORTAL_AUTENTIFICACIONtxt_clave_nueva" value="{txt_clave_nueva}" maxlength="10" size="10" type="password" name="{txt_clave_nueva_Name}"><input type="hidden" name="nRut" id="nRut" value ="{sRut}"></td> 
+      </tr>
+ 
+      <tr>
+        <td align="right"><div class="button-box" align="right">
+          <!-- BEGIN Button Button1 --><input id="PORTAL_AUTENTIFICACIONButton1" class="miboton" value="Volver" alt="Button1" type="button" onclick="window.location.href='auth_recordar.php'" name="{Button_Name}"><!-- END Button Button1 -->
+		  </div>
+		  </td> 
+		  
+        <td><div class="button-box" align="right">
+          <!-- BEGIN Button Button_Update --><input id="PORTAL_AUTENTIFICACIONButton_Update" class="miboton" value="Cambiar Clave" alt="Enviar" type="submit" name="{Button_Name}"><!-- END Button Button_Update -->
+		  </div>
+		  </td> 
+      </tr>
+ 
+    </table>
+ 
+  </div>
+ 
+</form>
+ <!-- END Record PORTAL_AUTENTIFICACION -->
+</div>
+<p>{footer}</p>
+</body>
+</html>

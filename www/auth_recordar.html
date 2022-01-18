@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>{lbTitle}</title>
+<link rel="stylesheet" type="text/css" href="css/estilos_sistema.css">
+<script src='//www.google.com/recaptcha/api.js'></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+
+<script>
+function recuperaCorreo(nRut){
+	document.getElementById('record_recordar').submit();
+}
+</script>
+</head>
+<body>
+{inc_header} <br>
+<div id="solicitar-clave-contenedor" class="a900">
+  <h1>Recordar Contraseña</h1>
+  <p>&nbsp;</p>
+  <!-- BEGIN Record record_recordar --> 
+  <form id="record_recordar" method="post" name="{HTMLFormName}" action="{Action}">
+    <div class="form_table">
+    	<table class="tabla_recordar" cellspacing="0" cellpadding="0">
+    	<!-- BEGIN Error -->
+    		<tr>
+    			<td colspan="6">
+    				<div class="error">
+		              {Error} 
+        		    </div>
+    			</td>
+    		</tr>
+    	 <!-- END Error -->
+    		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="6" class="pl20">Digita tu RUT y luego pincha el botón <b>"Ver"</b>, lo que te permitirá visualizar la dirección de correo electrónica que has registrado en las plataformas de Comisión Ingresa. </td>
+        	</tr>	
+    		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="1">&nbsp;</td>
+        		<th colspan="3" nowrap="nowrap">
+        		RUT
+        		&nbsp;&nbsp;<input id="record_recordarTextBox1"value="{TextBox1}" size="12" maxlength="10" name="{TextBox1_Name}">&nbsp; -<input id="record_recordarTextBox2"  value="{TextBox2}" maxlength="1" size="1" name="{TextBox2_Name}"  ></th>
+        		<td><div class="button-box2"><input id="record_recordarbtn_ver" class="miboton" value="Ver" alt="Button2" type="button" name="btn_ver" onclick="traeCorreo(document.getElementById('record_recordarTextBox1').value,document.getElementById('record_recordarTextBox2').value);"></div></td>
+        		<td>&nbsp;</td>
+        	</tr>	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="1">&nbsp;</td>
+        		<td colspan="5">Tu correo registrado es: <b><span style="font-size:14px;" id="tCorreo"></span></b></td>
+        	</tr>
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+     		<tr>
+       			<td colspan="6" class="pl20"><b>¿Qu&eacute; quieres hacer?</b></td>
+        	</tr>	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="6"><div class="button-box"><!-- BEGIN Button btn_cor --><input id="record_recordarbtn_cor" class="miboton" value="Enviar clave a mi correo" alt="{res:CCS_Insert}" type="submit" name="{Button_Name}"><!-- END Button btn_cor --></div></td>
+        	</tr>   	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+			<tr>
+          		<td  colspan="6" class="pl20" style="text-align:left">
+          		<div class="g-recaptcha captchaPadding"  data-sitekey="6LdG994UAAAAAMEyZk008hFki0xAKhZJWr2d7PPi" style="display: inline-block;"></div></td>
+        	</tr>
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+     		<tr>
+        		<td colspan="6"  class="pl20">La contraseña será remitida a la casilla electrónica registrada en las plataformas de Comisión Ingresa</td>
+        	</tr>	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="6" class="pl20"><b>¡IMPORTANTE!</b> Si no recibes tu contraseña en la bandeja de entrada de tu correo electrónico, por favor, revisa la bandeja de notificaciones, la carpeta de SPAM o los correos no deseados.</td>
+        	</tr>   	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+      		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+	   		<tr>
+        		<td colspan="6"><div class="button-box"><input id="btnCambiarCorreo" class="miboton" value="Cambiar mi correo" alt="Button2" type="button" name="{btnCambiarCorreo" onclick="window.location.href='cambiar_correo.php'"></td>
+        		<td>&nbsp;</td>
+        	</tr>   	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+    		<tr>
+        		<td colspan="6"><div class="button-box"><!-- BEGIN Button btn_cam --><input id="record_recordarbtn_cam" class="miboton" value="Cambiar mi clave" alt="Button2" type="submit" name="{Button_Name}"><!-- END Button btn_cam --></td>
+        		<td>&nbsp;</td>
+        	</tr>   	
+     		<tr>
+        		<td colspan="6">&nbsp;</td>
+        	</tr>	
+        </table>
+</form>
+<!-- END Record record_recordar -->
+</div>
+</div>
+<p>{inc_footer}</p>
+</body>
+</html>

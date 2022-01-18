@@ -1,0 +1,96 @@
+#cont-menu {
+background:transparent url(../img/bg_menu.png) repeat-x 0 0 ;height:35px;width:898px;border:1px solid #fff;position:relative;
+}
+
+.menu-j {
+background:transparent url(../img/bg_menu.png) repeat-x 0 0 ;
+height:30px;
+width:898px;
+border:1px solid #fff;
+position:relative;
+float: left;
+z-index:1;
+}
+
+.menu-j ul {
+margin:0;
+
+}
+.menu-j li {
+list-style-type: none;
+float: left;
+font-size: 12px;
+
+font-weight: normal;
+line-height: 28px;
+margin:0 1px;width:auto;min-height:25px;text-align:center;
+padding:2px 15px 0 15px;
+color:#FFF;
+}
+.menu-j li:hover {
+color: #FC0;
+
+}
+
+.menu-j li a {
+text-decoration: none;
+background:transparent url(../img/m1.png) no-repeat 0 0 ;
+font:bold 10px ;
+color: #fff;
+display: block  !important;
+position: relative;
+height:28px;
+padding: 0 20px;
+}
+
+.menu-j li a:hover {
+background:transparent url(../img/m2.png) no-repeat 0 0 ;
+color: #FC0;
+display: block;
+height: 28px;
+padding: 0 20px;
+}
+
+.menu-j ul li ul {
+display: none; 
+background: #669900 ;
+padding: 0;
+position: absolute;
+border-left:1px solid #fff;
+border-right:1px solid #fff;
+margin: 0px 0px;
+}
+
+.menu-j ul li:hover ul {
+display: block;
+
+}
+
+.menu-j ul li ul li {
+display: block;
+background-image:none;
+float: none;
+position: relative;
+text-align:left;
+text-transform:uppercase;
+border-bottom:1px solid #fff;
+color: #fff;
+padding: 0;
+margin:0;
+line-height:25px;
+height:25px;
+}
+
+.menu-j ul li ul li a{
+color: #fff;
+background-image:none;
+line-height:25px;
+}
+
+.menu-j ul li ul li a:hover {
+color: #FC0;
+background-image:none;
+line-height:25px;
+height:25px;
+margin:0;
+}

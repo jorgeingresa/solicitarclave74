@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+
+   == PRUEBAS DE BROWSER: ========================
+	 * Firefox (Windows, Ubuntu)
+   	 * Explorer 7, 6 y 5.5 (Windows)
+	 * Opera (Windows)
+	 * Chrome 0.2.1 (Windows)
+	 * Safari (Windows)
+	 
+
+   == ESTRUCTURA: ========================
+    * Ancho:					960 px
+    * Numero de columnas:		12
+    * Ancho de columna:         60 px
+    * Margen de columna:        20 px
+   ======================================
+   
+
+
+	/*EXTRAS -------------------------------------------------------------*/
+	/* Aplicar para ver la grilla */
+	.verGrilla { background: #fff url(grid.png) repeat-y; }
+	
+	/*Usar para dar alto 100% a una columna*/
+	.col100alto { padding-bottom: 30000px; margin-bottom: -30000px; } 		
+	/*--------------------------------------------------------- FIN EXTRAS*/
+	
+
+	/*Contenedor de todos los elementos del sitio - Controla la posicion del sitio: derecha, centro o izquierda */
+	body { text-align: center; background: #fff; }
+
+	
+	/*Contenedor de todos los elementos del sitio - Controla la posicion del sitio: derecha, centro o izquierda */
+	#contenedor { margin: 0 auto; padding: 0 5px; width: 950px; text-align: left; overflow: hidden; }	
+	
+	/*Unidad contenedora generica, aplicar siempre que existen 2 o mas columnas paralelas o como contenedor basico.*/
+	.caja { width: 100%; overflow: hidden; margin: 0 0 1em 0; display: block; overflow: hidden; }
+
+	
+	/* COLUMNAS */
+	/* Control del flotado y margen */
+	
+	.col1, .col2, .col3,  .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col50  { float: left; margin: 0 10px 0 0; overflow: hidden; }
+	.col4,.col12  { float: left; margin: 0 10px 0 0;  }
+	/* Importante: quita el margen extra a la ultima columna de cada fila para encajar */
+	.final { margin-right: 0; }
+	
+	/* Usar estas clases para determinar los anchos y cantidad de columnas. Siempre en relacion al class .contenedor */
+	.col1  { width: 70px; }
+	.col2  { width: 150px; }
+	.col3  { width: 230px; }
+	.col4  { width: 310px; }
+	.col5  { width: 390px; }
+	.col6  { width: 470px; }
+	.col7  { width: 550px; }
+	.col8  { width: 630px; }
+	.col9  { width: 710px; }
+	.col10 { width: 790px; }
+	.col11 { width: 870px; }
+	.col12 { width: 960px; margin: 0; }
+	.col50 { width: 48.15%;  }
+	/*--------------------------------------------------------- FIN COLUMNAS*/
+	
+
+
+
+/* comienzo tabs noticias */
+#noticias {
+	width: 290px !important;
+	/*background-color: #fff;*/
+	}
+#noticias div p {
+	background-color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+	margin-right: 0px;
+
+	text-align: left;
+	width: 240px;
+
+	}
+
+#tab1 p, #tab2 p, #tab3 p {
+	border-bottom: 1px solid #bdbec0; 
+	
+	}	
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 3px;
+	
+}
+.tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.tabs-nav li {
+    float: left;
+    height: 22px;
+    border: 1px solid #d3d3d3; 
+	background: #006699 url(images/ui-bg_highlight-hard_75_006699_1x100.png) 50% 50% repeat-x;
+	text-align:center;
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius:4px 4px 0 0; border-radius: 4px 4px 0 0;
+	margin-right:1px;
+	padding:0 4px;
+}
+
+.tabs-nav li a, .tabs-nav li a span {
+    display: block;
+    padding-left: 5px;
+    /*background: #006699;*/
+    color: #ffffff;
+    text-decoration: none;
+}
+.tabs-nav li a {
+
+	padding-top: 5px;
+    position: relative;
+    top: -6px;
+    z-index: 2;
+    padding-left: 0px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    /*line-height: 1.2;*/
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap; /* required in IE 6 */    
+}
+.tabs-nav .tabs-selected a {
+    color: #cc0000;
+	background: #fff url(images/ui-bg_highlight-soft_75_ffffff_1x100.png) 50% 50% repeat-x;
+}
+.tabs-nav .tabs-selected {
+     color: #cc0000;
+	background: none;
+	border:none;
+}
+.tabs-nav .tabs-selected a, .tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active {
+    /*background:#145f86;*/
+    outline: 0; /* prevent dotted border in Firefox */
+}
+.tabs-nav a, .tabs-nav .tabs-disabled a:hover, .tabs-nav .tabs-disabled a:focus, .tabs-nav .tabs-disabled a:active {
+    background:#145f86;
+}
+.tabs-nav a span {
+    height: 30px; /* IE 6 treats height as min-height */
+    min-height: 30px;
+    padding-top: 0;
+    padding-right: 0;
+}
+*>.tabs-nav a span { /* hide from IE 6 */
+    width: auto;
+    height: auto;
+}
+.tabs-nav .tabs-selected a span {
+    padding-top: 0px;
+}
+.tabs-nav .tabs-selected a span, .tabs-nav a:hover span, .tabs-nav a:focus span, .tabs-nav a:active span {
+	height: 30px;
+    background:#145f86;
+}
+.tabs-nav a span, .tabs-nav .tabs-disabled a:hover span, .tabs-nav .tabs-disabled a:focus span, .tabs-nav .tabs-disabled a:active span {
+	height: 30px;
+    background:#145f86;
+}
+.tabs-nav .tabs-selected a:link, .tabs-nav .tabs-selected a:visited, .tabs-nav .tabs-disabled a:link, .tabs-nav .tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.tabs-nav .tabs-disabled {
+    opacity: .4;
+}
+.tabs-container {
+	 margin-top: 1px;
+	 margin-left: 6px;
+
+   /* padding: 0 0 0 8px;*/
+    /*border: 5px solid #bdbec0;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+
+.tabs-loading em {
+    padding: 0 0 0 0px;
+    background: url(loading.gif) no-repeat 0 50%;
+}
+/* fin tabs noticias */
+
